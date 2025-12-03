@@ -65,7 +65,9 @@
 	 * Typographic tokens (font families)
 	 * Centralize font-family values so they can be reused across the project.
 	 */
-	--font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	
+	
+	--font-sans: "helvetica", sans-serif;
 
 	/*
 	 * FLUID SPACING SCALE
