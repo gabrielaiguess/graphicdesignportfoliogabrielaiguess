@@ -1,0 +1,18 @@
+.nav {
+  background: var(--color-bg-alt);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.nav-links a:hover { color: var(--color-accent); }
+.nav-logo { font-weight: bold; font-size: var(--text-lg); color: var(--color-accent); }

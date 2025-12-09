@@ -1,0 +1,5 @@
+.contact { background: var(--color-bg-alt); text-align:center; }
+.contact-content p { font-size: var(--text-lg); color: var(--color-text-muted); margin-bottom: var(--space-lg);}
+.social-links { display:flex; justify-content:center; gap: var(--space-lg); margin-top: var(--space-lg);}
+.social-links a { color: var(--color-text-muted); transition: color 0.3s; }
+.social-links a:hover { color: var(--color-accent);}

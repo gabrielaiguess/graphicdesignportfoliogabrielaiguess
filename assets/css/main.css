@@ -1,0 +1,14 @@
+/* SYSTEM LAYER */
+@import "./system/reset.css";
+@import "./system/tokens.css";
+@import "./system/typography.css";
+@import "./system/layout.css";
+@import "./system/utilities.css";
+
+/* COMPONENTS LAYER */
+@import "./components/navigation.css";
+@import "./components/hero.css";
+@import "./components/about.css";
+@import "./components/projects.css";
+@import "./components/contact.css";
+@import "./components/footer.css";
