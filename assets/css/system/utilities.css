@@ -1,3 +1,49 @@
-.flex-center { display: flex; align-items: center; justify-content: center; }
-.hidden { display: none !important; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Responsive Images */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Skip Link */
+.skip-link {
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--color-accent);
+	color: white;
+	padding: var(--space-sm) var(--space-md);
+	border-radius: 0 0 8px 8px;
+	z-index: 1000;
+	transition: top 0.3s;
+}
+.skip-link:focus {
+	top: 0;
+}
+
+/* Helpers */
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}

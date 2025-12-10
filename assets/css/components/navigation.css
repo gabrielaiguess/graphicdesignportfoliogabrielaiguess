@@ -9,10 +9,28 @@
   align-items: center;
 }
 
+.nav-logo {
+  font-weight: bold;
+  font-size: var(--text-lg);
+  color: var(--color-accent);
+}
+
 .nav-links {
   display: flex;
   gap: var(--space-md);
 }
 
-.nav-links a:hover { color: var(--color-accent); }
-.nav-logo { font-weight: bold; font-size: var(--text-lg); color: var(--color-accent); }
+.nav-links a {
+  color: var(--color-text);
+  font-size: var(--text-base);
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+}
