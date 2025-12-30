@@ -1,6 +1,6 @@
 .nav {
   background: var(--color-bg-alt);
-  padding: var(--space-md) var(--space-lg);
+  padding: 0.8rem var(--space-md)
 }
 
 .nav-container {
@@ -10,19 +10,28 @@
 }
 
 .nav-logo {
-  font-weight: bold;
-  font-size: var(--text-lg);
-  color: var(--color-accent);
+  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-weight: 400; 
+  font-size: 2.2rem; 
+  color: var(--color-text);
+}
+
+.nav-logo:hover {
+  color: var(--color-accent); /* tu rosa definido en tokens.css */
 }
 
 .nav-links {
+
+  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-weight: 400; 
+  font-size: 2.2rem; 
   display: flex;
   gap: var(--space-md);
 }
 
 .nav-links a {
   color: var(--color-text);
-  font-size: var(--text-base);
+  font-size: 2rem
 }
 
 .nav-links a:hover {

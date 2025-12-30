@@ -42,40 +42,11 @@
 	z-index: 1;
 }
 
-.hero-title {
-	font-size: var(--text-4xl);
-	font-weight: 800;
-	margin-bottom: var(--space-sm);
-	letter-spacing: -0.02em;
+.hero-logo {
+	color: var(--color-medio);
 }
 
-.hero-subtitle {
-	font-size: var(--text-xl);
-	color: var(--color-text-muted);
-	margin-bottom: var(--space-lg);
-}
 
-.scroll-indicator {
-	position: absolute;
-	bottom: var(--space-xl);
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: var(--space-sm);
-	color: var(--color-text-muted);
-	font-size: var(--text-sm);
-}
-
-.scroll-arrow {
-	width: 24px;
-	height: 24px;
-	border-right: 2px solid currentColor;
-	border-bottom: 2px solid currentColor;
-	transform: rotate(45deg);
-	animation: bounce 2s infinite;
-}
 
 @keyframes bounce {
 	0%,

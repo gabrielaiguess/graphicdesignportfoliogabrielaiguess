@@ -31,3 +31,13 @@ p {
   color: var(--color-text-muted);
   font-family: var(--font-sans);
 }
+
+.hero-logo {
+  display: block;
+  text-align: center;
+  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-size: 22vw; 
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+}

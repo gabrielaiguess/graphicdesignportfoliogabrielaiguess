@@ -53,3 +53,39 @@
 		transition: none;
 	}
 }
+
+
+
+/* ===============================
+   HERO LOGO
+   =============================== */
+
+.hero-logo-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-size: 30vw; /* ajustable */
+  line-height: 1;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.hero-logo-container .hero-logo:nth-child(2) {
+  margin-left: 0rem; /* pequeño espacio entre repeticiones */
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

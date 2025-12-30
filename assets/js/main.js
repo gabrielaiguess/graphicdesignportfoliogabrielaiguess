@@ -366,3 +366,47 @@ window.cleanupScrollObservers = () => {
 	staggerObserver.disconnect();
 	console.log('🧹 Observers cleaned up');
 };
+
+
+
+// ==========================================================================
+// 7. HERO LOGO ANIMATION
+// ==========================================================================
+
+const container = document.querySelector('.hero-logo-container');
+let logos = Array.from(container.children);
+let totalWidth = logos.reduce((acc, logo) => acc + logo.offsetWidth, 0);
+
+// Duplicar logos hasta cubrir el doble del viewport
+while (totalWidth < window.innerWidth * 2) {
+  const newClones = logos.map(logo => logo.cloneNode(true));
+  newClones.forEach(clone => container.appendChild(clone));
+  totalWidth += newClones.reduce((acc, logo) => acc + logo.offsetWidth, 0);
+  logos = [...logos, ...newClones];
+}
+
+let pos = 0;
+let lastTime = null;
+const baseSpeed = 1;
+const hoverSpeed = 0.3;
+
+function animate(time) {
+  if (!lastTime) lastTime = time;
+  const delta = time - lastTime;
+  lastTime = time;
+
+  const speed = container.matches(':hover') ? hoverSpeed : baseSpeed;
+  pos -= speed * (delta / 16);
+
+  if (pos <= -totalWidth / 2) pos += totalWidth / 2;
+
+  container.style.transform = `translateX(${pos}px)`;
+  requestAnimationFrame(animate);
+}
+
+requestAnimationFrame(animate);
+
+// Recalcular ancho al redimensionar ventana
+window.addEventListener('resize', () => {
+  totalWidth = Array.from(container.children).reduce((acc, logo) => acc + logo.offsetWidth, 0);
+});
