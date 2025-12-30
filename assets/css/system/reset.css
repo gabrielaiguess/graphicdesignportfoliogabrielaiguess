@@ -104,9 +104,21 @@ nav,
 section {
   display: block;
 }
+html {
+  background: var(--color-bg);
+}
+
 body {
   line-height: 1;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
 }
+
+a {
+  text-decoration: none;
+}
+
 ol,
 ul {
   list-style: none;

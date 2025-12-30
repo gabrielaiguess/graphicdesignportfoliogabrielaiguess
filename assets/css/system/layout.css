@@ -1,10 +1,10 @@
 .container {
-  width: min(90%, 1200px);
+  width: min(93%, 1400px);
   margin-inline: auto;
 }
 
 .section {
-  padding: var(--space-2xl) 0;
+  padding: clamp(4rem, 3rem + 5vw, 8rem) 0;
 }
 
 .grid-2 {
