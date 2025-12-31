@@ -69,7 +69,7 @@
 .hero-logo {
   flex-shrink: 0;
   font-family: "field-gothic-xxcondensed", sans-serif;
-  font-size: 30vw; /* ajustable */
+  font-size: clamp(34rem, 40vw, 50rem);
   line-height: 1;
   white-space: nowrap;
   display: inline-block;
@@ -88,4 +88,20 @@
   100% {
     transform: translateX(-100%);
   }
+}
+.hero-text-group {
+  position: relative;
+  display: inline-block; /* permite posicionamiento absoluto relativo a grupo */
+}
+
+.hero-label {
+  position: absolute;
+  bottom: 89%; /* justo encima del logo */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Medusa", sans-serif;
+  font-size: 8vw;
+    color: var(--color-text);
+  text-align: center;
+  line-height: 1;
 }

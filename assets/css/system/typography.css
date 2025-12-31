@@ -4,11 +4,12 @@ body {
 }
 
 h1 {
-  font-size: var(--text-4xl);
-  font-weight: 800;
+  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-size: 9rem;
+  font-weight: 500;
   margin-bottom: var(--space-sm);
   letter-spacing: -0.02em;
-  font-family: var(--font-sans);
+
 }
 
 h2 {
@@ -28,8 +29,10 @@ h3 {
 p {
   font-size: var(--text-base);
   margin-bottom: var(--space-md);
-  color: var(--color-text-muted);
+  color: var(--color-text);
   font-family: var(--font-sans);
+  letter-spacing: -0.03em;
+  font-weight: 70;
 }
 
 .hero-logo {

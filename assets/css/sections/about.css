@@ -8,15 +8,28 @@
 }
 
 @media (min-width: 768px) {
-	.about-grid {
-		grid-template-columns: 1fr 1fr;
-		align-items: start;
-	}
+  .about-grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
 }
 
 .about-text p {
 	margin-bottom: var(--space-md);
-	color: var(--color-text-muted);
+}
+
+.about-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 100rem;
+  min-width: 10rem;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills-grid {

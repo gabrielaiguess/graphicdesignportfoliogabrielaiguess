@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	min-height: 100vh;
+	min-height: clamp(50vh, 90vh, 100vh);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,15 +38,13 @@
 }
 
 .hero-content {
-	position: relative;
+	position: absolute;
 	z-index: 1;
 }
 
 .hero-logo {
 	color: var(--color-medio);
 }
-
-
 
 @keyframes bounce {
 	0%,
@@ -62,4 +60,17 @@
 	60% {
 		transform: rotate(45deg) translateY(5px);
 	}
+}
+
+.hero-text-group {
+  display: inline-block; /* permite posicionamiento absoluto relativo a grupo */
+}
+
+.hero-label {
+  font-family: "Medusa", sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  color: var(--color-text);
+  text-align: center;
+  line-height: 0;
 }
