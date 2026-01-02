@@ -15,15 +15,20 @@
 }
 
 .about-text p {
-	margin-bottom: var(--space-md);
+	margin-bottom: 0;
 }
 
 .about-text {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 100rem;
-  min-width: 10rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 48%;
+  min-width: 0 auto;
+}
+@media (max-width: 768px) {
+  .about-text {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

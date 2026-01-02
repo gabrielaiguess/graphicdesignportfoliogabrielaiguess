@@ -62,8 +62,12 @@
 
 .hero-logo-container {
   display: flex;
+  justify-content: flex-start;
   overflow: hidden;
   width: 100%;
+  padding-left: 175vw;
+  white-space: nowrap;
+  animation: scrollLeft calc(100vw / 2) linear infinite;
 }
 
 .hero-logo {
@@ -74,7 +78,6 @@
   white-space: nowrap;
   display: inline-block;
   margin: 0;
-  animation: scrollLeft 20s linear infinite;
 }
 
 .hero-logo-container .hero-logo:nth-child(2) {
@@ -82,17 +85,20 @@
 }
 
 @keyframes scrollLeft {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
+
+
 .hero-text-group {
   position: relative;
   display: inline-block; /* permite posicionamiento absoluto relativo a grupo */
 }
+
 
 .hero-label {
   position: absolute;
