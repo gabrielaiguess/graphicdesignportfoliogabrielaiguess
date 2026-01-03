@@ -54,7 +54,7 @@
 
 .project-content p {
 	font-size: var(--text-sm);
-	color: var(--color-text-muted);
+	color: var(--color-text);
 	margin-bottom: var(--space-md);
 }
 

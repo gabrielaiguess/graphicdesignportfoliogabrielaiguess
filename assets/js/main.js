@@ -410,3 +410,4 @@ requestAnimationFrame(animate);
 window.addEventListener('resize', () => {
   totalWidth = Array.from(container.children).reduce((acc, logo) => acc + logo.offsetWidth, 0);
 });
+

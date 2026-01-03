@@ -54,28 +54,59 @@
 	font-size: var(--text-2xl);
 	display: block;
 	margin-bottom: var(--space-sm);
+	transition: transform 0.3s ease;
 }
 
-.skill-card h3 {
-	font-size: var(--text-sm);
-	margin-bottom: var(--space-sm);
+.skill-icon:hover svg {
+  transform: scale(1.25);
 }
 
-.skill-bar {
-	height: 6px;
-	background: var(--color-bg-alt);
-	border-radius: 3px;
-	overflow: hidden;
+
+.skills-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centra el track dentro del contenedor */
+  margin-top: var(--space-xl);
 }
 
-.skill-fill {
-	height: 100%;
-	width: 0;
-	background: var(--color-accent);
-	border-radius: 3px;
-	transition: width 1s var(--ease-out) 0.3s;
+.skills-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;       /* ahora sí puedes usar 90% */
+  max-width: 85vw;
 }
 
-[data-reveal-stagger].revealed .skill-fill {
-	width: var(--fill);
+.skill-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon svg {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .skills-track {
+    gap: 2rem;
+  }
+  .skill-icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-track {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .skill-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

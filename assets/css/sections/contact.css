@@ -5,7 +5,7 @@
 
 .contact-content p {
 	font-size: var(--text-lg);
-	color: var(--color-text-muted);
+	color: var(--color-text);
 	margin-bottom: var(--space-lg);
 }
 
@@ -17,7 +17,7 @@
 }
 
 .social-links a {
-	color: var(--color-text-muted);
+	color: var(--color-text);
 	transition: color 0.3s;
 }
 
