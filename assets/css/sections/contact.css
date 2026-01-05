@@ -1,6 +1,7 @@
 .contact {
-	background: var(--color-bg-alt);
-	text-align: center;
+  background: var(--color-bg-alt);
+  text-align: center;
+  padding-top: 15rem; /* ajusta según necesites */
 }
 
 .contact-content p {

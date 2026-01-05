@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-family: "field-gothic-xxcondensed", Arial, sans-serif;
   font-size: 9rem;
   font-weight: 500;
   margin-bottom: var(--space-sm);
@@ -38,7 +38,7 @@ p {
 .hero-logo {
   display: block;
   text-align: center;
-  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-family: "field-gothic-xxcondensed", Arial, sans-serif;
   font-size: 22vw; 
   letter-spacing: -0.03em;
   line-height: 1;

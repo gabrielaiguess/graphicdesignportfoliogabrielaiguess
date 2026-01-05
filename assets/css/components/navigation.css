@@ -1,6 +1,11 @@
 .nav {
-  background: var(--color-bg-alt);
-  padding: 0.8rem var(--space-md)
+  position: fixed;  /* hace que se quede en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.8rem var(--space-md);
+  z-index: 1000; /* para que esté por encima del contenido */
+  background-color: var(--color-bg); /* si tu nav es transparente, ponle un color de fondo */
 }
 
 .nav-container {
@@ -10,7 +15,7 @@
 }
 
 .nav-logo {
-  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-family: "field-gothic-xxcondensed", Arial, sans-serif;
   font-weight: 400; 
   font-size: 2.2rem; 
   color: var(--color-text);
@@ -22,7 +27,7 @@
 
 .nav-links {
 
-  font-family: "field-gothic-xxcondensed", sans-serif;
+  font-family: "field-gothic-xxcondensed", Arial, sans-serif;
   font-weight: 400; 
   font-size: 2.2rem; 
   display: flex;

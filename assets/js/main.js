@@ -411,3 +411,12 @@ window.addEventListener('resize', () => {
   totalWidth = Array.from(container.children).reduce((acc, logo) => acc + logo.offsetWidth, 0);
 });
 
+
+const projectTitles = document.querySelectorAll(".project-title");
+
+projectTitles.forEach(title => {
+  title.addEventListener("click", () => {
+    const item = title.parentElement;
+    item.classList.toggle("open");
+  });
+});

@@ -2,27 +2,31 @@
 # This file will be used to generate your entry in the course showroom
 
 # Basic information
-handle: your-github-username
-name: Your Full Name
-email: your-email@udit.es
+handle: gabrielaiguess
+name: Gabriela Riera
+email: gabriela.riera@alumnos.udit.es
 
 # URLs (will be auto-generated if you follow naming conventions)
-github_url: https://github.com/your-username
-project_url: https://your-username.github.io/your-project-repo
-repository_url: https://github.com/your-username/your-project-repo
+github_url: https://github.com/gabrielaiguess
+project_url: https://gabrielaiguess.github.io/graphicdesignportfoliogabrielaiguess/
+repository_url: https://github.com/gabrielaiguess/graphicdesignportfoliogabrielaiguess
 
 # Project details
 title:
- es: Título de tu Proyecto en Español
- en: Your Project Title in English
+ es: Portfolio Gabriela Riera
+ en: Gabriela Riera Portfolio
 
 abstract:
  es: |
-  Una descripción concisa de tu proyecto web en español. 
-  Explica qué construyes, para quién y por qué es importante.
+  Hola! Soy Gabriela Riera, una diseñadora gráfica apasionada por crear identidades visuales impactantes y diseños innovadores.
+   Este portafolio muestra una selección de mis mejores trabajos, desde branding hasta diseño digital, reflejando mi enfoque creativo 
+   y atención al detalle. Mi objetivo es comunicar ideas de manera efectiva a través del diseño, siempre buscando la excelencia y la 
+   originalidad en cada proyecto.
  en: |
-  A concise description of your web project in English.
-  Explain what you're building, for whom, and why it matters.
+  Hey! I'm Gabriela Riera, a graphic designer passionate about creating impactful visual identities and innovative designs. 
+  This portfolio showcases a selection of my best works, from branding to digital design, reflecting my creative approach and
+   attention to detail. My goal is to effectively communicate ideas through design, always striving for excellence and originality 
+   in every project.
 
 # Technical tags (choose relevant ones)
 tags:
@@ -37,14 +41,22 @@ learning_focus:
  - semantic-html
  - mobile-first-design
  - web-accessibility
- # Add more as you progress
+ - responsive-layouts avanzados
+ - optimización de performance web
+ - integración de tipografía personalizada
+ - manejo de assets y media queries complejas
+ - animaciones y transiciones CSS
+ - buenas prácticas de UX/UI
+ - control de consistencia visual con variables CSS
+ - deployment y gestión de repositorios en GitHub Pages
+ - troubleshooting de compatibilidad entre navegadores
 
 # Week tracking (update as you go)
 milestones:
- week_1_setup: false
- week_2_brief: false
- week_4_metadata: false
- week_5_showcase: false
+ week_1_setup: true
+ week_2_brief: true
+ week_4_metadata: true
+ week_5_showcase: true
 
 # Optional: link to your project brief
 brief_url: project-brief.md

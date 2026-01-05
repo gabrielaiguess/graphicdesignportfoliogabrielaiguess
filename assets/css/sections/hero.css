@@ -6,6 +6,7 @@
 	justify-content: center;
 	text-align: center;
 	overflow: hidden;
+	padding-top: 6rem;
 }
 
 .hero-bg {
@@ -67,7 +68,7 @@
 }
 
 .hero-label {
-  font-family: "Medusa", sans-serif;
+  font-family: "Medusa", Arial, sans-serif;
   font-size: 5vw;
   margin: 0;
   color: var(--color-text);

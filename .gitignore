@@ -1,1 +1,22 @@
+# Sistema
 .DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+*.code-workspace
+
+# Archivos de log
+*.log
+
+# Configs locales o secrets
+.env
+
+# Archivos de backup
+*.bak
+*.tmp
+
+# Node / dependencias (si se usan)
+node_modules/
+dist/
+build/
